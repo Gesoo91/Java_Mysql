@@ -28,9 +28,7 @@ public class ProcEdit {
 				*/
 //		이러한 입력방식은 sql삽입공격에 취약하다고 한다.  예를들어 입력값에 drop table ~~같은것을 기입하면 서버에 테이블이 지워지니까
 //		이를 방지하기 위해 Prepared Statement를 사용하여 미리 컴파일하고 실행시에는 파라미터를 전달하는 방식으로 하는게 좋다.
-		/*
-	case "5": // 글수정
-	*/
+
 		int postCountNo = Db.getPostCount();
 	    while(true) {
 			String editNo = Ci.r("수정할 글번호를 입력해주세요:");

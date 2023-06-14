@@ -27,6 +27,8 @@ public class ProcRead {
 					String content = Db.result.getString("b_content");	// p_name 필드(열) 의 데이터 꺼내기(1개 꺼낸거에서)
 					Cw.wn("글제목: "+title);
 					Cw.wn("글내용: "+content);
+					
+					ProcReply.list(Integer.parseInt(readNo));
                 }
                 else {
                 	Cw.wn("유효한 글번호를 써주세요.");
