@@ -6,7 +6,7 @@ import com.peisia.c.board.display.Disp;
 import com.peisia.util.Ci;
 import com.peisia.util.Cw;
 import com.peisia.util.Db;
-//todo : case1,2에 넣은 숫자범위 및 정수아닐때 오류나는거 4,5에도 추가해주기
+//todo : case1,2에 넣은 숫자범위 및 정수아닐때 오류나는거 4,5에도 추가해주기 -> 유효성검사 추가 완료.
 @SuppressWarnings("unused")
 public class ProcBoard {
 	void run() {

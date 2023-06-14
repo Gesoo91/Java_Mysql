@@ -10,6 +10,7 @@ public class Db {
 	static public Connection con = null;
 	static public Statement st = null;
 	static public ResultSet result = null;
+	public static Object conn;
 	static public void dbInit() {
 		try {
 			Db.con = DriverManager.getConnection("jdbc:mysql://localhost:3306/my_cat", "root", "root");

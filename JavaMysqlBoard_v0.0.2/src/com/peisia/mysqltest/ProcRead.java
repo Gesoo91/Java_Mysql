@@ -18,9 +18,9 @@ public class ProcRead {
 		}
 		else {
 			try {
-				int postCount = Db.getPostCount();
+				int intCount = Db.getPostCount();
                 int selectedNo = Integer.parseInt(readNo);
-                if (selectedNo >= 0 && selectedNo <= postCount) {
+                if (selectedNo >= 0 && selectedNo <= intCount) {
 					Db.result = Db.st.executeQuery("select * from board where b_no ="+readNo);
 					Db.result.next();	// 결과를 하나씩 빼기. 더 이상 없으면(행 수가 끝나면) false 리턴됨.
 					String title = Db.result.getString("b_title");	// p_name 필드(열) 의 데이터 꺼내기(1개 꺼낸거에서)
